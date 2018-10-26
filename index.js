@@ -3,7 +3,28 @@ const Canvas = require("canvas");
 const jimp = require("jimp");
 const moment = require("moment");
 console.log("Welcome Again !");
- client.on('ready', () => {
+
+ 
+
+if(!Discord) var Discord = require('discord.js');
+if(!client) var client = new Discord.Client();
+if(!prefix) var prefix = "-" ; // البرفكس 
+
+var stopReacord = true;
+var reactionRoles = [];
+var definedReactionRole = null;
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+ client.on('message', msg => {
+    if(msg.content === '-help')
+    msg.reply('Check Your DMs :white_check_mark:')
+  });
+  
+  
+  
+  
+   client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`! Legends | By: RO7`,"http://twitch.tv/S-F")
   console.log('')
@@ -28,27 +49,6 @@ client.user.setGame(`! Legends | By: RO7`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
- 
-
-if(!Discord) var Discord = require('discord.js');
-if(!client) var client = new Discord.Client();
-if(!prefix) var prefix = "-" ; // البرفكس 
-
-var stopReacord = true;
-var reactionRoles = [];
-var definedReactionRole = null;
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
- client.on('message', msg => {
-    if(msg.content === '-help')
-    msg.reply('Check Your DMs :white_check_mark:')
-  });
-  
-  
-  
-  
-  
   client.on('message',async msg => {//Alpha Codes
 //Alpha Codes//Alpha Codes//Alpha Codes//Alpha Codes//Alpha Codes
   var prefix = "-";//Alpha Codes
