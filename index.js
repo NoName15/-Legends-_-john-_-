@@ -15,17 +15,15 @@ var reactionRoles = [];
 var definedReactionRole = null;
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-});
- client.on('message', msg => {
+});client.on('message', msg => {
     if(msg.content === '-help')
     msg.reply('Check Your DMs :white_check_mark:')
   });
   
   
   
-  
-   client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+client.on('ready', () => {
+console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`! Legends | By: RO7`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
@@ -49,7 +47,7 @@ client.user.setGame(`! Legends | By: RO7`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-  client.on('message',async msg => {//Alpha Codes
+client.on('message',async msg => {//Alpha Codes
 //Alpha Codes//Alpha Codes//Alpha Codes//Alpha Codes//Alpha Codes
   var prefix = "-";//Alpha Codes
 //Alpha Codes
@@ -72,7 +70,7 @@ Dat = currentTime.getDate()//Alpha Codes
   }
  
 });
- lient.on("message", message => {
+ client.on("message", message => {
     if (message.content === "-help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
